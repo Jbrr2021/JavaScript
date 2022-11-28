@@ -1,0 +1,49 @@
+body {
+    background: rgb(95, 70, 236);
+    font: normal 15pt Comic Sans MS, Comic Sans, cursive;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.24);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font: italic;
+}
+
+input#click {
+    background: red;
+    border-radius: 13%;
+    color: aliceblue;
+    font: normal 15pt Comic Sans MS, Comic Sans, cursive ;
+}
+
+input#txti {
+    width: 21%;
+    left: 1%;
+    position: relative;
+}
+
+input#txtf {
+    width: 21%;
+    left: 5%;
+    position: relative;
+    ;
+}
+input#txtp {
+    width: 20%;
+    left: 2%;
+    position: relative;
+}
