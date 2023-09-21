@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste de Nacionalidade</title>
     <style>
-        body {
-            background: rgb(123, 123, 185);
-            font: normal 18px Ariel;
-            color: rgb(255, 255, 255);
-        }
+      body {
+        background: rgb(123, 123, 185);
+        font: normal 18px Ariel;
+        color: rgb(255, 255, 255);
+      }
 
-        input {
-            border-radius: 5px;
-            margin: 3px 4px;
-            color: rgb(0, 0, 255);
-        }
+      input {
+        border-radius: 5px;
+        margin: 3px 4px;
+        color: rgb(0, 0, 255);
+      }
 
-        div#nacionalidade {
-            font: normal 20px Ariel;
-        }
+      div#nacionalidade {
+        font: normal 20px Ariel;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <h1>Teste de nacionalidade</h1>
-    Digite o país que você nasceu:<input type="text" name="verificador" id="verificador" />
-    <input type="button" value="Clique e descubra sua nacionalidade " onclick="verificar()" />
-    <div id="nacionalidade">Nacionalidade:
-
-    </div>
-
+    Digite o país que você nasceu:<input
+      type="text"
+      name="verificador"
+      id="verificador"
+    />
+    <input
+      type="button"
+      value="Clique e descubra sua nacionalidade "
+      onclick="verificar()"
+    />
+    <div id="nacionalidade">Nacionalidade:</div>
 
     <script>
+      var verificador = window.document.getElementById("verificador");
+      var nacionalidade = window.document.getElementById("nacionalidade");
 
-        var verificador = window.document.getElementById('verificador');
-        var nacionalidade = window.document.getElementById('nacionalidade');
-
-        function verificar() {
-
-            if (verificador.value == 'brasil' || verificador.value == 'BRASIL' || verificador.value == 'Brasil') {
-                nacionalidade.innerText = 'Você é Brasileiro!';
-            } else {
-                nacionalidade.innerText = 'Você é Estrangeiro!';
-            }
+      function verificar() {
+        if (
+          verificador.value == "brasil" ||
+          verificador.value == "BRASIL" ||
+          verificador.value == "Brasil"
+        ) {
+          nacionalidade.innerText = "Você é Brasileiro!";
+        } else {
+          nacionalidade.innerText = "Você é Estrangeiro!";
         }
-
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
